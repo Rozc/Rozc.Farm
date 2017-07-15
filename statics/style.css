@@ -3,7 +3,7 @@
 
 html {
 	height: 1080px;
-	width: 1100px;
+	width: 1150px;
 
 }
 
@@ -150,7 +150,7 @@ pre {
 /*	background-color: #000000 ;*/
 	text-align: center;
 	height: 1200px;
-	margin-top:-370px;
+	margin-top:-425px;
 	font-family: "Exo 2";
 /*	src: url("statics/exo2regular.ttf");*/
 
@@ -187,6 +187,6 @@ pre {
 }
 
 #link1, #link4, #link7 {
-	margin-left: 320px;
+	margin-left: 350px;
 }
 
