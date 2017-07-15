@@ -1,11 +1,11 @@
 
 /*Main*/
 
-/*html {
+html {
 	height: 1080px;
-	width: 1920px;
-	Test
-}*/
+	width: 1100px;
+
+}
 
 body{
 	font-family: " \5fae\8f6f\96c5\9ed1", "Segoe UI Light", "Microsoft YaHei UI Light", "Microsoft YaHei Light", "Segoe UI", "Microsoft YaHei", "Microsoft YaHei UI", "Hiragino Sans GB W3", "Hiragino Sans GB", "Droid Sans Fallback", "Source Sans", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp", sans-serif;
@@ -18,7 +18,7 @@ body {
 	background-color: #F79F58;
 /*	color: #000000;
 	margin: 0;*/
-	overflow: hidden;
+	overflow: scroll;
 }
 
 h1 {
@@ -27,8 +27,8 @@ h1 {
 
 
 pre {
-	font-family: "DIN Condensed C";
-	src: url("statics/DINCondensedC.otf");
+	font-family: "sans-serif";
+	/*src: url("statics/DINCondensedC.otf");*/
 	margin:0;
 }
 
@@ -62,6 +62,7 @@ pre {
 	float: left;
 	writing-mode: horizontal-tb;
 	font-size:50px;
+	font-weight: bold;
 
 
 }
@@ -95,7 +96,7 @@ pre {
 	vertical-align: middle;
 	transition: all ease 0.1s;
 	font-family: "Exo 2";
-	src: url("statics/exo2regular.ttf");
+/*	src: url("statics/exo2regular.ttf");*/
 	position: relative;
 	z-index: 9999;
 }
@@ -151,7 +152,7 @@ pre {
 	height: 1200px;
 	margin-top:-370px;
 	font-family: "Exo 2";
-	src: url("statics/exo2regular.ttf");
+/*	src: url("statics/exo2regular.ttf");*/
 
 }
 
@@ -164,7 +165,7 @@ pre {
 
 .index_link {
 	font-family: "Exo 2";
-	src: url("statics/exo2regular.ttf");
+/*	src: url("statics/exo2regular.ttf");*/
 	font-size:35px;
 	margin:0;
 	float: left;
