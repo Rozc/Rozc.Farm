@@ -1,0 +1,180 @@
+
+/*Main*/
+
+/*html {
+	height: 1080px;
+	width: 1920px;
+}*/
+
+body{
+	font-family: " \5fae\8f6f\96c5\9ed1", "Segoe UI Light", "Microsoft YaHei UI Light", "Microsoft YaHei Light", "Segoe UI", "Microsoft YaHei", "Microsoft YaHei UI", "Hiragino Sans GB W3", "Hiragino Sans GB", "Droid Sans Fallback", "Source Sans", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp", sans-serif;
+	font:16px/1.5 \5fae\8f6f\96c5\9ed1;
+}
+
+
+body {
+
+	background-color: #F79F58;
+/*	color: #000000;
+	margin: 0;*/
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 33%;
+}
+
+
+pre {
+	font-family: "DIN Condensed C";
+	src: url("statics/DINCondensedC.otf");
+	margin:0;
+}
+
+/*#page_main{
+	height: 100%;
+}*/
+
+/*Title*/
+
+#title_all{
+
+	margin-top: 0;
+	height: 500px;
+	width: 120px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#title_page{
+	float: left;
+	background-color: #F79F58;
+	padding-left: 10px;
+	text-align: left;
+/*	width: 25%;
+	height: 100%;*/
+	writing-mode: vertical-lr;
+}
+
+#title_name {
+	float: left;
+	writing-mode: horizontal-tb;
+	font-size:200%;
+
+}
+
+#title_main{
+	float: top;
+	font-size:200%;
+	font-weight: bold;
+
+
+}
+
+#title_sub{
+	float: left;
+	font-size:100%;
+	font-weight: bold;
+
+}
+
+
+#title_card {
+	float: right;
+	background-color: #F78F58;
+	margin:20px;
+	padding:10px;
+	padding-right: 0;
+	width: 180px;
+	height: 50px;
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	transition: all ease 0.1s;
+	font-family: "Exo 2";
+	src: url("statics/exo2regular.ttf");
+}
+
+#title_card:hover {
+	transform: scale(1.03);
+
+}
+
+#title_card:active{
+	transform: scale(0.97);
+
+
+}
+
+#card_img {
+
+
+	margin-right: 6%;
+	height:100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#card_text {
+
+	height: 100%;
+	width:100px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#card_name{
+	height: 50%;
+	width:100%;
+	font-size: 23px;
+	margin:0;
+}
+
+#card_x {
+	height: 50%;
+	width:100%;
+	font-size: 12px;
+/*	font-weight: bold;*/
+	margin:5% 0 0 0;
+}
+
+/*Index*/
+
+#main_index {
+/*	background-color: #000000 ;*/
+	text-align: center;
+	height: 100%;
+	margin-top:-10%;
+	font-family: "Exo 2";
+	src: url("statics/exo2regular.ttf");
+
+}
+
+#link_first, #link_second, #link_third {
+	/*float:left;*/
+	margin:0;
+	height:20%;
+	align-items: center;
+}
+
+.index_link {
+	margin:0;
+	float: left;
+/*	overflow: hidden ;*/
+	width:10% ;
+	height:90%;
+	background-color: #FFFFFF;
+/*	transform: skew(-20deg);*/
+	margin-left: 2%;
+
+}
+
+.index_link:hover {
+	background-color: #000000;
+	color:#FFFFFF;
+}
+
+#link1, #link4, #link7 {
+	margin-left: 33%;
+}
+
