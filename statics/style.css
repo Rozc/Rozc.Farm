@@ -83,7 +83,7 @@ pre {
 
 
 #title_card {
-	float: right;
+/*	float: right;*/
 	background-color: #F78F58;
 	margin:20px;
 	padding:14px;
@@ -96,6 +96,8 @@ pre {
 	transition: all ease 0.1s;
 	font-family: "Exo 2";
 	src: url("statics/exo2regular.ttf");
+	position: relative;
+	z-index: 9999;
 }
 
 #title_card:hover {
@@ -166,21 +168,24 @@ pre {
 	font-size:35px;
 	margin:0;
 	float: left;
+
 /*	overflow: hidden ;*/
 	width:200px;
 	padding:82.5px 0;
-	background-color: #FFFFFF;
+	background-color: rgba(255,255,255,0.2);
+
 /*	transform: skew(-20deg);*/
 	margin-left: 40px;
+	transition: all ease 0.2s;
 
 }
 
 .index_link:hover {
-	background-color: #000000;
-	color:#FFFFFF;
+	background-color: rgba(255,255,255,0.4);
+
 }
 
 #link1, #link4, #link7 {
-	margin-left: 33%;
+	margin-left: 320px;
 }
 
