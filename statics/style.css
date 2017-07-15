@@ -40,7 +40,8 @@ pre {
 
 #title_all{
 
-	margin-top: 0;
+	margin-top: 10px;
+	margin-left: 10px;
 	height: 500px;
 	width: 120px;
 	display: inline-block;
@@ -60,13 +61,14 @@ pre {
 #title_name {
 	float: left;
 	writing-mode: horizontal-tb;
-	font-size:200%;
+	font-size:50px;
+
 
 }
 
 #title_main{
-	float: top;
-	font-size:200%;
+	float: left;
+	font-size:50px;
 	font-weight: bold;
 
 
@@ -74,7 +76,7 @@ pre {
 
 #title_sub{
 	float: left;
-	font-size:100%;
+	font-size:30px;
 	font-weight: bold;
 
 }
@@ -84,10 +86,10 @@ pre {
 	float: right;
 	background-color: #F78F58;
 	margin:20px;
-	padding:10px;
+	padding:14px;
 	padding-right: 0;
-	width: 180px;
-	height: 50px;
+	width: 260px;
+	height: 80px;
 	border-radius: 5px;
 	display: inline-block;
 	vertical-align: middle;
@@ -119,7 +121,7 @@ pre {
 #card_text {
 
 	height: 100%;
-	width:100px;
+	width:140px;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -127,14 +129,14 @@ pre {
 #card_name{
 	height: 50%;
 	width:100%;
-	font-size: 23px;
+	font-size: 30px;
 	margin:0;
 }
 
 #card_x {
 	height: 50%;
 	width:100%;
-	font-size: 12px;
+	font-size: 17px;
 /*	font-weight: bold;*/
 	margin:5% 0 0 0;
 }
@@ -144,8 +146,8 @@ pre {
 #main_index {
 /*	background-color: #000000 ;*/
 	text-align: center;
-	height: 100%;
-	margin-top:-10%;
+	height: 1200px;
+	margin-top:-370px;
 	font-family: "Exo 2";
 	src: url("statics/exo2regular.ttf");
 
@@ -154,19 +156,22 @@ pre {
 #link_first, #link_second, #link_third {
 	/*float:left;*/
 	margin:0;
-	height:20%;
-	align-items: center;
+	height:250px;
+/*	align-items: center;*/
 }
 
 .index_link {
+	font-family: "Exo 2";
+	src: url("statics/exo2regular.ttf");
+	font-size:35px;
 	margin:0;
 	float: left;
 /*	overflow: hidden ;*/
-	width:10% ;
-	height:90%;
+	width:200px;
+	padding:82.5px 0;
 	background-color: #FFFFFF;
 /*	transform: skew(-20deg);*/
-	margin-left: 2%;
+	margin-left: 40px;
 
 }
 
