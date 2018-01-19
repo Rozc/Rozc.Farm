@@ -1,192 +1,107 @@
+/*2018-01-15-16:15 TOTALLY REWRITE*/
 
-/*Main*/
-
-html {
-	height: 1080px;
-	width: 1150px;
-
+@font-face {
+    font-family: Exfont;
+    src: url(exo2regular.ttf)
 }
 
-body{
-	font-family: " \5fae\8f6f\96c5\9ed1", "Segoe UI Light", "Microsoft YaHei UI Light", "Microsoft YaHei Light", "Segoe UI", "Microsoft YaHei", "Microsoft YaHei UI", "Hiragino Sans GB W3", "Hiragino Sans GB", "Droid Sans Fallback", "Source Sans", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp", sans-serif;
-	font:16px/1.5 \5fae\8f6f\96c5\9ed1;
+@font-face {
+    font-family: Dengfont;
+    src: url(deng.ttf)
+}
+
+html {
+    height: 100%;
+    background: linear-gradient(to bottom right, #68a7f7, #66CCFF, #f7f4f4);
 }
 
 
 body {
-
-	background-color: #F79F58;
-/*	color: #000000;
-	margin: 0;*/
-	overflow: scroll;
-}
-
-h1 {
-	font-size: 33%;
-}
-
-
-pre {
-	font-family: "sans-serif";
-	/*src: url("statics/DINCondensedC.otf");*/
-	margin:0;
-}
-
-/*#page_main{
-	height: 100%;
-}*/
-
-/*Title*/
-
-#title_all{
-
-	margin-top: 10px;
-	margin-left: 10px;
-	height: 500px;
-	width: 120px;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#title_page{
-	float: left;
-	background-color: #F79F58;
-	padding-left: 10px;
-	text-align: left;
-/*	width: 25%;
-	height: 100%;*/
-	writing-mode: vertical-lr;
-}
-
-#title_name {
-	float: left;
-	writing-mode: horizontal-tb;
-	font-size:50px;
-	font-weight: bold;
-
-
-}
-
-#title_main{
-	float: left;
-	font-size:50px;
-	font-weight: bold;
-
-
-}
-
-#title_sub{
-	float: left;
-	font-size:30px;
-	font-weight: bold;
-
-}
-
-
-#title_card {
-/*	float: right;*/
-	background-color: #F78F58;
-	margin:20px;
-	padding:14px;
-	padding-right: 0;
-	width: 260px;
-	height: 80px;
-	border-radius: 5px;
-	display: inline-block;
-	vertical-align: middle;
-	transition: all ease 0.1s;
-	font-family: "Exo 2";
-/*	src: url("statics/exo2regular.ttf");*/
-	position: relative;
-	z-index: 9999;
-}
-
-#title_card:hover {
-	transform: scale(1.03);
-
-}
-
-#title_card:active{
-	transform: scale(0.97);
-
-
-}
-
-#card_img {
-
-
-	margin-right: 6%;
-	height:100%;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#card_text {
-
-	height: 100%;
-	width:140px;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#card_name{
-	height: 50%;
-	width:100%;
-	font-size: 30px;
-	margin:0;
-}
-
-#card_x {
-	height: 50%;
-	width:100%;
-	font-size: 17px;
-/*	font-weight: bold;*/
-	margin:5% 0 0 0;
-}
-
-/*Index*/
-
-#main_index {
-/*	background-color: #000000 ;*/
+    height: 100%;
+    margin: 0;
 	text-align: center;
-	height: 1200px;
-	margin-top:-425px;
-	font-family: "Exo 2";
-/*	src: url("statics/exo2regular.ttf");*/
 
 }
 
-#link_first, #link_second, #link_third {
-	/*float:left;*/
-	margin:0;
-	height:250px;
-/*	align-items: center;*/
+#mainMidCard {
+    /*margin: -60px auto auto auto;*/
+    position: absolute;
+    /*top: 50%;*/
+
+	background-color: #F79F56;
+	text-align: left;
+	width: 300px;
+	height: 120px;
+    border-radius: 15px;
+    z-index: 3;
+
+    transition: all 0.5s;
 }
 
-.index_link {
-	font-family: "Exo 2";
-/*	src: url("statics/exo2regular.ttf");*/
-	font-size:35px;
-	margin:0;
+
+
+
+#mainMidCardImg {
 	float: left;
-
-/*	overflow: hidden ;*/
-	width:200px;
-	padding:82.5px 0;
-	background-color: rgba(255,255,255,0.2);
-
-/*	transform: skew(-20deg);*/
-	margin-left: 40px;
-	transition: all ease 0.2s;
-
+	margin: 10px;
 }
 
-.index_link:hover {
-	background-color: rgba(255,255,255,0.4);
-
+#mainMidCardTextMe {
+	font-family: Exfont;
+	float: left;
+	font-size: 30px;
+	width: 180px;
+    text-align: center;
+    margin: 20px auto auto auto;
 }
 
-#link1, #link4, #link7 {
-	margin-left: 350px;
+#mainMidCardTextDo {
+    font-family: Dengfont;
+    float: left;
+    font-size: 20px;
+    width: 180px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+}
+
+.mainLinkS {
+    color: #419ff7;
+    visibility: hidden;
+    background-color: #33CCFF;
+    width: 300px;
+    height: 120px;
+    text-align: center;
+    transition: all 500ms;
+    z-index: 2;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.mainLinkTextBig {
+    padding-top: 32px;
+    height: 40px;
+    font-size: 33px;
+}
+
+.mainLinkTextSmall {
+    height: 48px;
+    width: 300px;
+    line-height: 48px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+}
+
+.mainLinkB {
+    color: #419ff7;
+    visibility: hidden;
+    background-color: #33CCFF;
+    width: 300px;
+    height: 360px;
+    text-align: center;
+    transition: all 500ms;
+    z-index: 1;
 }
 
