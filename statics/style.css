@@ -80,12 +80,14 @@ body {
 
 
 .mainLinkTextBig {
+    font-family: Exfont;
     padding-top: 32px;
     height: 40px;
     font-size: 33px;
 }
 
 .mainLinkTextSmall {
+    font-family: Consolas;
     height: 48px;
     width: 300px;
     line-height: 48px;
