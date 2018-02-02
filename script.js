@@ -36,7 +36,7 @@ window.onload = function() {
         a.onmouseleave = function() {
             flag[pos] = 0;
             setTimeout(function () {
-                if(flag.indexOf(1) == -1) {
+                if(flag.indexOf(1) === -1) {
                     cardOnLeave();
                 }
             }, 300)
@@ -72,7 +72,7 @@ function cardOnHover() {
         IM.style.transitionDelay = "500ms";
         LN.style.transitionDelay = "500ms";
         CD.style.transitionDelay = "1000ms";
-    }, 5);
+    }, 1);
 
 }
 

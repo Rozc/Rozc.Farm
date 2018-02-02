@@ -58,14 +58,13 @@ body {
 #mainMidCardTextDo {
     font-family: Dengfont;
     float: left;
-    font-size: 20px;
+    font-size: 15px;
     width: 180px;
     text-align: center;
     margin: 20px auto 20px auto;
 }
 
 .mainLinkS {
-    color: #419ff7;
     visibility: hidden;
     background-color: #33CCFF;
     width: 300px;
@@ -80,6 +79,7 @@ body {
 
 
 .mainLinkTextBig {
+    color: #419ff7;
     font-family: Exfont;
     padding-top: 32px;
     height: 40px;
@@ -87,6 +87,7 @@ body {
 }
 
 .mainLinkTextSmall {
+    color: #596363;
     font-family: Consolas;
     height: 48px;
     width: 300px;
