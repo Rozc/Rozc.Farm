@@ -12,7 +12,7 @@
 
 html {
     height: 100%;
-    background: linear-gradient(to bottom right, #68a7f7, #66CCFF, #f7f4f4);
+    background: linear-gradient(to bottom right, #3A82E0, #548CA7, #7B71C1);
 }
 
 
@@ -24,21 +24,73 @@ body {
 }
 
 #mainMidCard {
-    /*margin: -60px auto auto auto;*/
     position: absolute;
-    /*top: 50%;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 
 	background-color: #F79F56;
 	text-align: left;
-	width: 300px;
+	width: 120px;
 	height: 120px;
     border-radius: 15px;
     z-index: 3;
 
     transition: all 0.5s;
+    transition-delay: 1s;
 }
 
 
+#overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 120px;
+    width: 120px;
+}
+
+#overlay:hover {
+    height: 360px;
+    width: 900px;  
+}
+
+#overlay:hover #mainMidCard {
+    transition-delay: 0s;
+    border-radius: 0;
+    width: 300px;
+}
+
+#overlay:hover .mainMidCardText {
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+
+#overlay:hover #mainLinkLN {
+    visibility: visible;
+    transform: translate(-50%, 50%);
+    transition-delay: 0.5s;
+}
+#overlay:hover #mainLinkIM {
+    visibility: visible;
+    transform: translate(-50%, -150%);
+    transition-delay: 0.5s;
+}
+
+
+#overlay:hover #mainLinkBG {
+    visibility: visible;
+    transform: translate(-150%, -50%);
+    transition-delay: 1s;
+}
+
+#overlay:hover #mainLinkFR {
+    visibility: visible;
+    transform: translate(50%, -50%);
+    transition-delay: 1s;
+}
 
 
 #mainMidCardImg {
@@ -46,12 +98,32 @@ body {
 	margin: 10px;
 }
 
+
+#FRIcon {
+    height: 100px;
+    width: 100px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 15px;
+}
+
+.mainMidCardText {
+    width: 180px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    transition-delay: 0.5s;
+    pointer-events: none;
+}
+
 #mainMidCardTextMe {
 	font-family: Exfont;
 	float: left;
 	font-size: 30px;
-	width: 180px;
-    text-align: center;
     margin: 20px auto auto auto;
 }
 
@@ -59,22 +131,30 @@ body {
     font-family: Dengfont;
     float: left;
     font-size: 15px;
-    width: 180px;
-    text-align: center;
     margin: 20px auto 20px auto;
 }
 
 .mainLinkS {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     visibility: hidden;
     background-color: #33CCFF;
     width: 300px;
     height: 120px;
     text-align: center;
-    transition: all 500ms;
+    
     z-index: 2;
     border-left: 1px solid whitesmoke;
     border-right: 1px solid whitesmoke;
     box-sizing: border-box;
+
+    transition: all 500ms;
+    transition-delay: 0.5s; 
+
 }
 
 
@@ -98,6 +178,12 @@ body {
 }
 
 .mainLinkB {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     color: #419ff7;
     visibility: hidden;
     background-color: #33CCFF;
@@ -106,5 +192,6 @@ body {
     text-align: center;
     transition: all 500ms;
     z-index: 1;
+    
 }
 
