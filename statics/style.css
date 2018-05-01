@@ -1,4 +1,5 @@
 /*2018-01-15-16:15 TOTALLY REWRITE*/
+/*2019-05-01-16:30 TRANSITION REWRITE*/
 
 @font-face {
     font-family: Exfont;
@@ -12,16 +13,15 @@
 
 html {
     height: 100%;
-    background: linear-gradient(to bottom right, #3A82E0, #548CA7, #7B71C1);
+    background: linear-gradient(to bottom, #d4e0d1, #51c19f);
 }
-
 
 body {
     height: 100%;
     margin: 0;
 	text-align: center;
-
 }
+
 
 #mainMidCard {
     position: absolute;
@@ -41,6 +41,14 @@ body {
     transition-delay: 1s;
 }
 
+#mainMidCardImg {
+    width: 100px;
+    height: 100px;
+
+    float: left;
+    margin: 10px;
+}
+
 
 #overlay {
     position: absolute;
@@ -56,18 +64,17 @@ body {
     height: 360px;
     width: 900px;  
 }
-
 #overlay:hover #mainMidCard {
     transition-delay: 0s;
     border-radius: 0;
     width: 300px;
+    border-left: 1px solid #1a1c19;
+    border-right: 1px solid #1a1c19;
 }
-
 #overlay:hover .mainMidCardText {
     transition-delay: 0.5s;
     opacity: 1;
 }
-
 #overlay:hover #mainLinkLN {
     visibility: visible;
     transform: translate(-50%, 50%);
@@ -78,24 +85,15 @@ body {
     transform: translate(-50%, -150%);
     transition-delay: 0.5s;
 }
-
-
 #overlay:hover #mainLinkBG {
     visibility: visible;
-    transform: translate(-150%, -50%);
+    transform: translate(-50%, -50%);
     transition-delay: 1s;
 }
-
 #overlay:hover #mainLinkFR {
     visibility: visible;
-    transform: translate(50%, -50%);
+    transform: translate(-50%, -50%);
     transition-delay: 1s;
-}
-
-
-#mainMidCardImg {
-	float: left;
-	margin: 10px;
 }
 
 
@@ -110,6 +108,7 @@ body {
 
     border-radius: 15px;
 }
+
 
 .mainMidCardText {
     width: 180px;
@@ -134,32 +133,42 @@ body {
     margin: 20px auto 20px auto;
 }
 
-.mainLinkS {
 
+.mainLinkB, .mainLinkS {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     visibility: hidden;
-    background-color: #33CCFF;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 500ms;
+    text-align: center;
+}
+
+.mainLinkS {
+    transform: translate(-50%, -50%);
+
     width: 300px;
     height: 120px;
-    text-align: center;
-    
+
     z-index: 2;
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
-    box-sizing: border-box;
+    border-left: 1px solid #1a1c19;
+    border-right: 1px solid #1a1c19;
 
-    transition: all 500ms;
-    transition-delay: 0.5s; 
+    transition-delay: 0.5s;
 
+}
+
+.mainLinkB {
+    width: 300px;
+    height: 360px;
+    z-index: 1;
 }
 
 
 .mainLinkTextBig {
-    color: #419ff7;
+    color: #051206;
     font-family: Exfont;
     padding-top: 32px;
     height: 40px;
@@ -177,21 +186,33 @@ body {
     bottom: 0;
 }
 
-.mainLinkB {
+.BOverlay {
+    overflow: hidden;
+
+    width: 300px;
+    height: 360px;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-
-    color: #419ff7;
-    visibility: hidden;
-    background-color: #33CCFF;
-    width: 300px;
-    height: 360px;
-    text-align: center;
-    transition: all 500ms;
-    z-index: 1;
-    
+    pointer-events: none;
 }
+#BGOverlay {
+    transform: translate(-150%, -50%);
+}
+#FROverlay {
+    transform: translate(50%, -50%);
+}
+
+#mainLinkBG {
+    transform: translate(50%, -50%);
+
+    border-radius: 15px 0 0 15px;
+}
+#mainLinkFR {
+    transform: translate(-150%, -50%);
+
+    border-radius: 0 15px 15px 0;
+}
+
 

@@ -14,9 +14,9 @@
 <!--<img src="im.png">-->
 <div id="overlay">
     <div id="mainMidCard">
-        <img src="im.png" id="mainMidCardImg" width="100" height="100">
+        <img src="im.png" id="mainMidCardImg">
         <p id="mainMidCardTextMe" class="mainMidCardText">Rozc</p>
-        <p id="mainMidCardTextDo" class="mainMidCardText">1 * 啥都不会的大学狗</p>
+        <p id="mainMidCardTextDo" class="mainMidCardText">耕田 / 炼钢 / 搬砖</p>
     </div>
     <div id="mainLinkIM" class="mainLinkS" onclick="window.open('http://im.rozc.farm', '_self')">
         <div style="position: relative; height: 120px; width: 300px;" >
@@ -32,14 +32,19 @@
         </div>
 
     </div>
-    <div id="mainLinkBG" class="mainLinkB" style="border-radius: 15px 0 0 15px;" onclick="window.open('http://blog.rozc.farm', '_self')">
-        <div class="mainLinkTextBig">博客 / Blog</div>
-        <div class="mainLinkTextSmall">blog.rozc.farm</div>
+    <div id="BGOverlay" class="BOverlay">
+        <div id="mainLinkBG" class="mainLinkB" onclick="window.open('http://blog.rozc.farm', '_self')">
+            <div class="mainLinkTextBig">博客 / Blog</div>
+            <div class="mainLinkTextSmall">blog.rozc.farm</div>
+        </div>
     </div>
-    <div id="mainLinkFR" class="mainLinkB" style="border-radius: 0 15px 15px 0;" onclick="window.open('http://friends.rozc.farm', '_self')">
-        <div class="mainLinkTextBig">朋友们 / Friends</div>
-        <img src="im.png" id="FRIcon">
-        <div class="mainLinkTextSmall">friends.rozc.farm</div>
+
+    <div id="FROverlay" class="BOverlay">
+        <div id="mainLinkFR" class="mainLinkB" onclick="window.open('http://friends.rozc.farm', '_self')">
+            <div class="mainLinkTextBig">朋友们 / Friends</div>
+            <img src="im.png" id="FRIcon">
+            <div class="mainLinkTextSmall">friends.rozc.farm</div>
+        </div>
     </div>
 </div>
 
