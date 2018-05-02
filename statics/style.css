@@ -163,7 +163,7 @@ body {
 .mainLinkB {
     width: 300px;
     height: 360px;
-    z-index: 1;
+    pointer-events: all;
 }
 
 
